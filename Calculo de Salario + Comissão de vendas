@@ -1,0 +1,20 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+/*URI 1009*/ 
+
+public class Main {
+	
+    public static void main(String[] args) throws IOException {
+        Scanner leitor = new Scanner(System.in);
+        System.out.println("Digite o nome do vendedor: ");
+        String nome = leitor.next();
+        System.out.println("Digite o salario fixo do vendedor: ");
+        double salarioFixo = leitor.nextDouble();
+        System.out.println("Digite o valor das vendas: ");
+        double vendas = leitor.nextDouble();
+        double total = ((vendas * 15) / 100) + salarioFixo;
+        System.out.println(String.format("Salario + comissão do valor total das vendas realizadas, será de  = R$ %.3f" , total));
+    }
+	
+}
