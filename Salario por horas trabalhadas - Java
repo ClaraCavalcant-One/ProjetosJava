@@ -14,7 +14,7 @@ public class Main {
         double numeroPorValorTotal = numerofuncionarios * salario;
         System.out.println("Numero de funcionarios = " + numerofuncionarios);
         System.out.println(String.format("Salario total a receber = R$ %.2f" , salario));
-        System.out.println(String.format("Salario total a receber = R$ %.2f" , numeroPorValorTotal));
+        System.out.println(String.format("Somatoria total dos valores = R$ %.2f" , numeroPorValorTotal));
     }
 	
 }
