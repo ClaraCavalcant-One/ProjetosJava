@@ -1,0 +1,21 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+/*URI 1015*/
+
+public class Main {
+	
+    public static void main(String[] args) throws IOException {
+    	Scanner leitor = new Scanner(System.in);
+    System.out.println("Digite os valores do eixo X e Y do 1° plano: ");
+        double x1 = leitor.nextDouble();
+        double y1 = leitor.nextDouble();
+    System.out.println("Digite os valores do eixo X e Y do 2° plano: ");
+        double x2 = leitor.nextDouble();
+        double y2 = leitor.nextDouble();
+    System.out.println("A distância entre os dois planos é: ");
+        double distancia = Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
+        System.out.println(String.format("%.4f", distancia)); 
+    }
+	
+}
