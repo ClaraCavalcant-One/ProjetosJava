@@ -1,0 +1,20 @@
+import java.io.IOException;
+import java.util.Scanner;
+/* URI 1008*/ 
+public class Main {
+	public static void main(String[] args) throws IOException {
+        Scanner leitor = new Scanner(System.in);
+        System.out.println("Digite o numero de funcionarios: ");
+        int numerofuncionarios = leitor.nextInt();
+        System.out.println("Digite a quantidade de horas trabalhadas: ");
+        int horas = leitor.nextInt();
+        System.out.println("Digite o valor da horas trabalhada: ");
+        double valorPorHora = leitor.nextDouble();
+        double salario = horas * valorPorHora;
+        double numeroPorValorTotal = numerofuncionarios * salario;
+        System.out.println("Numero de funcionarios = " + numerofuncionarios);
+        System.out.println(String.format("Salario total a receber = R$ %.2f" , salario));
+        System.out.println(String.format("Salario total a receber = R$ %.2f" , numeroPorValorTotal));
+    }
+	
+}
